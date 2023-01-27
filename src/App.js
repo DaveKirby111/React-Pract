@@ -8,6 +8,8 @@ import FunctionalCounter from "./components/FunctionalCounter";
 // import FunctionEvent from './components/FunctionEvent';
 // import ClassEvent from './components/ClassEvent';
 import ConditionalComponent from './components/ConditionalComponent';
+import Product from './components/Product';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -23,7 +25,11 @@ function App() {
 
    <ConditionalComponent></ConditionalComponent>
 
+   <Product></Product>
+
    <Resume name = "David"></Resume>
+
+   <Form></Form>
 
   </main>
 
