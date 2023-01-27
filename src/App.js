@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+// import Message from "./components/message.js";
+import Profile from "./components/Profile.js";
+// import Counter from "./components/Counter.js";
+import Resume from './components/Resume';
+import FunctionalCounter from "./components/FunctionalCounter";
+// import FunctionEvent from './components/FunctionEvent';
+// import ClassEvent from './components/ClassEvent';
+import ConditionalComponent from './components/ConditionalComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <header>
+    <Hello></Hello>
+    </header>
+    
+    <main>
+
+  <FunctionalCounter></FunctionalCounter>
+
+   <ConditionalComponent></ConditionalComponent>
+
+   <Resume name = "David"></Resume>
+
+  </main>
+
+   <footer>
+   <Profile fname="David" lname="Kirby">
+      <p>email: david@kinetic.com</p>
+    </Profile>
+   </footer>
+
     </div>
   );
 }
